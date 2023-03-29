@@ -129,6 +129,25 @@ a:hover {
   width: 18px;
 }
 
+.hidden {
+  display: none;
+}
+
+.loading-img {
+  height: 100px;
+  display: block;
+  animation: loading-spin infinite .6s linear;
+}
+
+@keyframes loading-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @media screen and ( width < 1400px ) {
   .header {
     flex-direction: column;
